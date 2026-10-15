@@ -799,3 +799,16 @@ table.rt td{vertical-align:middle}
   .pm-net{justify-self:start}
 }
 @media (max-width:760px){.pm-net::before{content:"Net xG ";font:600 10px/1 var(--font-ui);letter-spacing:.06em;text-transform:uppercase;opacity:.8}}
+/* ---------- physical ---------- */
+.ph-tiles{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px}
+@media (max-width:1000px){.ph-tiles{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.ph-tiles .tile .to{font-size:36px}
+.ph-tiles .chg{white-space:normal;line-height:1.35}
+.ph-rank th small{display:block;margin-top:3px;font:500 10px/1 var(--font-ui);letter-spacing:0;text-transform:none}
+.ph-rank th[data-k]{cursor:pointer;white-space:nowrap}
+.ph-rank th[data-k]:hover,.ph-rank th.on{color:var(--ink-1)}
+.ph-rank td.ph-c{white-space:nowrap;color:var(--ink-1)}
+.ph-rank td.ph-c small{margin-left:5px;font-size:11px;color:var(--ink-3)}
+.ph-rank tr.us td{font-weight:700;color:#fff;box-shadow:inset 0 1px 0 var(--blue),inset 0 -1px 0 var(--blue)}
+.ph-rank tr.us td.tm{color:var(--blue-ink)}
+.ph-rank td.tm{white-space:nowrap}
